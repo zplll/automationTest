@@ -13,7 +13,7 @@ public class seleniumTest01 {
     public static void main(String[] args){
         PropertyConfigurator.configure("F:\\2project\\automationTest\\src\\log.properties");
        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kin\\Documents\\Tencent Files\\1418641603\\FileRecv\\chromeDriver.exe");
-        System.out.println(System.getProperty("webdriver.chrome.driver"));
+        //System.out.println(System.getProperty("webdriver.chrome.driver"));
 //        FirefoxProfile fp = new FirefoxProfile();
 //        fp.setPreference("browser.startup.homepage", "about:blank");
 //        fp.setPreference("startup.homepage_welcome_url", "about:blank");
@@ -24,6 +24,7 @@ public class seleniumTest01 {
         logger.debug("打开成功");
         driver.get("http://www.baidu.com");
         driver.navigate().to("https://www.douban.com");
+        driver.close();
         logger.debug("结束");
     }
 }
