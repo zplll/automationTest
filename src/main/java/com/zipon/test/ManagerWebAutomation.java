@@ -61,7 +61,6 @@ public class ManagerWebAutomation {
         WebElement reportNav=driver.findElement(By.linkText("报表"));
         common.MouseHoverByJavaScript(reportNav,driver);
         common.snapshot((TakesScreenshot) driver,"reportTest.png");
-        System.out.println(Math.pow(2,10));
     }
 
     @AfterMethod
