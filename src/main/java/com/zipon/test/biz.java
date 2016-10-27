@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
  * @author kin
  * @version $: v 0.1 2016/10/20 Exp $$
  */
-public class biz {
+public class Biz {
 
     public static void login(WebDriver driver){
         String testUrl="http://172.33.0.189:8080";

@@ -22,7 +22,7 @@ public class ManagerWebAutomation {
     @BeforeMethod
     public void beforeMethod(){
         //设置浏览器
-         driver = common.driverConf("chrome");
+         driver = Common.driverConf("chrome");
         //打日志
         PropertyConfigurator.configure("src/log.properties");
         logger=Logger.getLogger(ManagerWebAutomation.class);
@@ -33,10 +33,10 @@ public class ManagerWebAutomation {
     public  void loginTest() throws InterruptedException {
        //登陆
         logger.info("开始执行登陆用例");
-        biz.login(driver);
+        Biz.login(driver);
         logger.info("登陆成功");
         Thread.sleep(3000);
-        common.snapshot((TakesScreenshot) driver,"login.png");
+        Common.snapshot((TakesScreenshot) driver,"login.png");
 
     }
 
@@ -50,7 +50,7 @@ public class ManagerWebAutomation {
     public void reportTest(){
         //登陆
         logger.info("开始执行登陆用例");
-        biz.login(driver);
+        Biz.login(driver);
         logger.info("登陆成功");
         try {
             Thread.sleep(3000);
@@ -59,8 +59,8 @@ public class ManagerWebAutomation {
         }
         //悬浮报表nav
         WebElement reportNav=driver.findElement(By.linkText("报表"));
-        common.MouseHoverByJavaScript(reportNav,driver);
-        common.snapshot((TakesScreenshot) driver,"reportTest.png");
+        Common.MouseHoverByJavaScript(reportNav,driver);
+        Common.snapshot((TakesScreenshot) driver,"reportTest.png");
     }
 
     @AfterMethod

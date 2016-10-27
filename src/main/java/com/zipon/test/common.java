@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author kin
  * @version $: v 0.1 2016/10/20 Exp $$
  */
-public class common {
+public class Common {
 
     //浏览器设置
     public static WebDriver driverConf(String browser){
@@ -40,7 +40,7 @@ public class common {
             System.out.println("save snapshot path is:"+currentPath+"/screenshot/"+filename);
             FileUtils.copyFile(scrFile, new File(currentPath+"\\screenshot\\"+filename));
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+
             System.out.println("Can't save screenshot");
             e.printStackTrace();
         }
