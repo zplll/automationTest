@@ -50,6 +50,11 @@
             <artifactId>hibernate</artifactId>
             <version>3.1.2</version>
         </dependency>
+        <dependency>
+            <groupId>spring</groupId>
+            <artifactId>spring</artifactId>
+            <version>1.0.2</version>
+        </dependency>
     </dependencies>
 
     

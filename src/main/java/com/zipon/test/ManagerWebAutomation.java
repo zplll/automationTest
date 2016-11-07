@@ -16,8 +16,8 @@ import org.testng.annotations.Test;
  */
 public class ManagerWebAutomation {
 
-    static WebDriver driver=null;
-    static  Logger logger=null;
+    private static WebDriver driver;
+    private static  Logger logger;
 
     @BeforeMethod
     public void beforeMethod(){

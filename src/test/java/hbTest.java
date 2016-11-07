@@ -3,15 +3,12 @@
  * @version $: v 0.1 2016/10/26 Exp $$
  */
 
-    import com.hibernate.model.User;
-    import org.hibernate.Session;
-    import org.hibernate.SessionFactory;
-    import org.hibernate.cfg.Configuration;
+import com.zipon.test.Common;
 
-    public class hbTest {
+public class hbTest {
 
         public static void main(String[] args){
-            User s = new User();
+           /* User s = new User();
             s.setId(2);
             s.setNickname("lll");
             s.setLastname("chen");
@@ -25,7 +22,9 @@
             session.save(s);
             session.getTransaction().commit();
             session.close();
-            sf.close();
+            sf.close();*/
+            Common.readValueFromProperties("F:\\2project\\automationTest\\src\\datasourceTest.properties","aaa");
+            Common.readProperties("F:\\2project\\automationTest\\src\\datasourceTest.properties");
         }
     }
 
