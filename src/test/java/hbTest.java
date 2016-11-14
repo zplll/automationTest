@@ -23,8 +23,8 @@ public class hbTest {
             session.getTransaction().commit();
             session.close();
             sf.close();*/
-            Common.readValueFromProperties("F:\\2project\\automationTest\\src\\datasourceTest.properties","aaa");
-            Common.readProperties("F:\\2project\\automationTest\\src\\datasourceTest.properties");
+            Common.readValueFromProperties("src/datasourceTest.properties","aaa");
+            Common.readProperties("src/datasourceTest.properties");
         }
     }
 

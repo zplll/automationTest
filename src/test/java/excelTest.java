@@ -39,6 +39,8 @@ public class excelTest {
 //            FileOutputStream fos=new FileOutputStream("PersonInfo"+sdf.format(new Date())+System.currentTimeMillis()+".xls");//创建
 //            newExcel.write(fos);//向输入流写入数据
 //            System.out.println("sql cost :"+(System.currentTimeMillis()-sql_begin)+"ms.");//数据操作花费时间
+
+
         }
     }
 
