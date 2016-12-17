@@ -114,4 +114,12 @@ public class Common {
             System.err.println("Visit "+filePath+" for updating "+parameterName+" value error");
         }
     }
+
+    //获取类当前路径
+    public String  getCurrentUrl(){
+        String currentUrl = System.getProperty("user.dir");
+       // String currentUrl = getClass().getResource("/").getFile().toString();
+        return currentUrl;
+
+    }
 }
